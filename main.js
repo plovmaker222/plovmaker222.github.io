@@ -1,3 +1,12 @@
+const chars5=[
+    {
+        "id": 15,
+        "name": "SOVETDIREKTOROV",
+        "desc": "Итоги голосования: Дима Бонд не допускается к разбану на этом сервере.",
+        "rarity": 5
+    }
+]
+
 const chars4=[
     {
         "id": 1,
@@ -95,8 +104,9 @@ function getRandom(){
     var num=Math.random();
     if(num < 0.4) return 1;  //probability 0.4
     else if(num < 0.7) return 2; // probability 0.3
-    else if(num < 0.9) return 3; //probability 0.2
-    else return 4;  //probability 0.1
+    else if(num < 0.85) return 3; //probability 0.15
+    else if(num < 0.95) return 4; // probability 0.1
+    else return 5;  //probability 0.05
 }
 
 function getRandomFromCategory(num){
@@ -113,6 +123,9 @@ function getRandomFromCategory(num){
         case 4:
             idx=Math.floor(Math.random() * chars4.length);
             return chars4[idx];
+        case 5:
+            idx=Math.floor(Math.random() * chars5.length);
+            return chars5[idx];
     }
 }
 
@@ -131,7 +144,7 @@ function rollPress () {
     document.getElementById("charname").innerHTML = charRolled.name;
     document.getElementById("chardesc").innerHTML = charRolled.desc;
     document.getElementById("charrarity").innerHTML = charRolled.rarity;
-    if (charRolled.id==11){
+    if (charRolled.id==11 || charRolled.id==15){
         document.getElementById("charimg").src = "./images/" + charRolled.name + ".gif";
     }
     else {

@@ -3,9 +3,13 @@
     <head>
         <title>Лучшая гача на свете</title>
     </head>
-    <body>
+    <body background="./images/bg.gif">
         <script src="main.js"></script>
         <style>
+            body {
+                color: white;
+            }
+
             .container {
                 display: flex;
             }
@@ -18,23 +22,32 @@
             }
 
             .fixwidth {
-                width: 300px;
-                height: 300px;
+                width: 600px;
+                height: 600px;
                 border: 3px solid rgba(179, 8, 222, 0.791);
+            }
+
+            .rollButton {
+                width: 200px;
+                height: 100ps;
+                font-size: 20px;
             }
         </style>
         <h1>MOPS DUSTAN: GACHA</h1>
-        <h1>Список редкостей: 1 (common) - 40%; 2 (uncommon) - 30%; 3 (rare) - 20%; 4 (super rare) - 10%.</h1>
+        <h1>Список редкостей: 1 (common) - 40%; 2 (uncommon) - 30%; 3 (rare) - 15%; 4 (super rare) - 10%.</h1>
         <div class="container">
             <div class="maincont">
                 <img src="./images/PLACEHOLDER.jpeg" class="fixwidth" id="charimg">
                 <h1 id="charname">Nothing</h1>
                 <h2 id="chardesc">Nothing</h2>
                 <h1 id="charrarity">Empty</h1>
-                <button onclick="rollPress()">Roll</button>
+                <button onclick="rollPress()" class="rollButton">Roll</button>
             </div>
             <div class="counters">
                 <ul>
+                    <li>
+                        ???????? :<p id="15">0</p>
+                    </li>
                     <li>
                         Shooter :<p id="14">0</p>
                     </li>
