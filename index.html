@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Лучшая гача на свете</title>
     </head>
     <body>
@@ -35,6 +36,15 @@
                 border: 3px solid rgba(179, 8, 222, 0.791);
             }
 
+            .textdesc {
+                width: 500px;
+                height: 200px;
+            }
+
+            .textdesc > h1 {
+                text-align: left;
+            }
+
             .rollButton {
                 width: 200px;
                 height: 100px;
@@ -55,15 +65,73 @@
                 width: auto;
                 height: 600px;
             }
+
+            @media screen and (max-width: 900px) {
+                .body {
+                    padding: 0%;
+                }
+
+                .container {
+                    display: block;
+                }
+
+                .counters {
+                    width: 100%;
+                    border: 3px solid #73AD21;
+                    padding: 3px;
+                    font-size: 30px;
+                }
+
+                .rollButton {
+                    width: 100%;
+                    height: 100px;
+                    font-size: 20px;
+                }
+
+                .fixwidth {
+                    width: 100%;
+                    height: 300px;
+                    border: 3px solid #73AD21;
+                }
+
+                .textdesc {
+                    font-size: 10px;
+                    overflow-wrap: break-word;
+                    inline-size: 300px;
+                }
+
+                .showable {
+                    width: 100%;
+                    height: 30px;
+                    font-size: 20px;
+                }
+
+                .youwin {
+                    width: 100%;
+                    height: 450px;
+                    border: 3px solid #73AD21;
+                }
+
+                .youwin > img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
         </style>
         <h1>MOPS DUSTAN: GACHA</h1>
         <h1>Список редкостей: 1 (common) - 40%; 2 (uncommon) - 30%; 3 (rare) - 15%; 4 (super rare) - 10%.</h1>
         <div class="container">
             <div class="maincont">
                 <img src="./images/PLACEHOLDER.jpeg" class="fixwidth" id="charimg">
-                <h1 id="charname">Nothing</h1>
-                <h2 id="chardesc">Nothing</h2>
-                <h2 id="charrarity">Empty</h1>
+                <div class="textdesc">
+                    <h1 id="charname">Nothing</h1>
+                    <h2 id="chardesc">Nothing</h2>
+                    <h2 id="charrarity">Empty</h1>
+                </div>
                 <button onclick="rollPress()" class="rollButton">Roll</button>
             </div>
             <div class="youwin" id="youwinblock" style="display: none;">
