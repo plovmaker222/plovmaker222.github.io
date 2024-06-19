@@ -6,6 +6,10 @@
     <body background="./images/bg.gif">
         <script src="main.js"></script>
         <style>
+            li {
+                border: 2px solid white;
+            }
+
             body {
                 color: white;
             }
@@ -16,9 +20,9 @@
 
             .counters {
                 margin-left: auto;
-                width: 200px;
+                width: 300px;
                 border: 3px solid #73AD21;
-                padding: 10px;
+                padding: 5px;
             }
 
             .fixwidth {
@@ -29,8 +33,17 @@
 
             .rollButton {
                 width: 200px;
-                height: 100ps;
+                height: 100px;
                 font-size: 20px;
+            }
+
+            .showable {
+                width: 250px;
+                font-size: 20px;
+            }
+
+            h1 {
+                text-align: center;
             }
         </style>
         <h1>MOPS DUSTAN: GACHA</h1>
@@ -40,55 +53,70 @@
                 <img src="./images/PLACEHOLDER.jpeg" class="fixwidth" id="charimg">
                 <h1 id="charname">Nothing</h1>
                 <h2 id="chardesc">Nothing</h2>
-                <h1 id="charrarity">Empty</h1>
+                <h2 id="charrarity">Empty</h1>
                 <button onclick="rollPress()" class="rollButton">Roll</button>
             </div>
             <div class="counters">
                 <ul>
                     <li>
                         ???????? :<p id="15">0</p>
+                        <button onclick="showItem(15)" class="showable">show</button>
                     </li>
                     <li>
                         Shooter :<p id="14">0</p>
+                        <button onclick="showItem(14)" class="showable">show</button>
                     </li>
                     <li>
                         Ckyl :<p id="13">0</p>
+                        <button onclick="showItem(13)" class="showable">show</button>
                     </li>
                     <li>
                         Denis :<p id="12">0</p>
+                        <button onclick="showItem(12)" class="showable">show</button>
                     </li>
                     <li>
                         Queen Of Fezza :<p id="11">0</p>
+                        <button onclick="showItem(11)" class="showable">show</button>
                     </li>
                     <li>
                         Ckyl Block :<p id="10">0</p>
+                        <button onclick="showItem(10)" class="showable">show</button>
                     </li>
                     <li>
                         Deimos :<p id="9">0</p>
+                        <button onclick="showItem(9)" class="showable">show</button>
                     </li>
                     <li>
                         Stoika :<p id="8">0</p>
+                        <button onclick="showItem(8)" class="showable">show</button>
                     </li>
                     <li>
                         Kohl :<p id="7">0</p>
+                        <button onclick="showItem(7)" class="showable">show</button>
                     </li>
                     <li>
                         Mrume :<p id="6">0</p>
+                        <button onclick="showItem(6)" class="showable">show</button>
                     </li>
                     <li>
                         Rivan :<p id="5">0</p>
+                        <button onclick="showItem(5)" class="showable">show</button>
                     </li>
                     <li>
                         Plovus :<p id="4">0</p>
+                        <button onclick="showItem(4)" class="showable">show</button>
                     </li>
                     <li>
                         Bondik :<p id="3">0</p>
+                        <button onclick="showItem(3)" class="showable">show</button>
                     </li>
                     <li>
                         Leika :<p id="2">0</p>
+                        <button onclick="showItem(2)" class="showable">show</button>
                     </li>
                     <li>
                         Mops :<p id="1">0</p>
+                        <button onclick="showItem(1)" class="showable">show</button>
                     </li>
                 </ul>
             </div>

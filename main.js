@@ -153,3 +153,53 @@ function rollPress () {
     document.getElementById(charRolled.id).innerHTML++;
 
 }
+
+function getCharacterById (id) {
+    for (let i = 0; i < chars1.length; i++){
+        if (chars1[i].id == id){
+            return chars1[i];
+        }
+    }
+    for (let i = 0; i < chars2.length; i++){
+        if (chars2[i].id == id){
+            return chars2[i];
+        }
+    }
+    for (let i = 0; i < chars3.length; i++){
+        if (chars3[i].id == id){
+            return chars3[i];
+        }
+    }
+    for (let i = 0; i < chars4.length; i++){
+        if (chars4[i].id == id){
+            return chars4[i];
+        }
+    }
+    for (let i = 0; i < chars5.length; i++){
+        if (chars5[i].id == id){
+            return chars5[i];
+        }
+    }
+}
+
+function showItem (id) {
+    if (document.getElementById(id).innerHTML < 1){
+        document.getElementById("charname").innerHTML = "not found yet!";
+        document.getElementById("chardesc").innerHTML = "not found yet!";
+        document.getElementById("charrarity").innerHTML = "not found yet!";
+        document.getElementById("charimg").src = "./images/PLACEHOLDER.jpeg";
+    }   
+    else {
+        const gottenChar = getCharacterById(id);
+        var charByID = new characters(gottenChar.id, gottenChar.name, gottenChar.desc, gottenChar.rarity);
+        document.getElementById("charname").innerHTML = gottenChar.name;
+        document.getElementById("chardesc").innerHTML = gottenChar.desc;
+        document.getElementById("charrarity").innerHTML = gottenChar.rarity;
+        if (gottenChar.id==11 || gottenChar.id==15){
+            document.getElementById("charimg").src = "./images/" + gottenChar.name + ".gif";
+        }
+        else {
+            document.getElementById("charimg").src = "./images/" + gottenChar.name + ".jpeg";
+        }
+    }
+}
