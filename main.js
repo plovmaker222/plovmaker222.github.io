@@ -151,6 +151,7 @@ function rollPress () {
         document.getElementById("charimg").src = "./images/" + charRolled.name + ".jpeg";
     }
     document.getElementById(charRolled.id).innerHTML++;
+    checkWin();
 
 }
 
@@ -201,5 +202,17 @@ function showItem (id) {
         else {
             document.getElementById("charimg").src = "./images/" + gottenChar.name + ".jpeg";
         }
+    }
+}
+
+function checkWin(){
+    if (document.getElementById(1).innerHTML >= 1 && document.getElementById(2).innerHTML >= 1 && document.getElementById(3).innerHTML >= 1 && document.getElementById(4).innerHTML >= 1 && document.getElementById(5).innerHTML >= 1 && document.getElementById(6).innerHTML >= 1 && document.getElementById(7).innerHTML >= 1 && document.getElementById(8).innerHTML >= 1 && document.getElementById(9).innerHTML >= 1 && document.getElementById(10).innerHTML >= 1 && document.getElementById(11).innerHTML >= 1 && document.getElementById(12).innerHTML >= 1 && document.getElementById(13).innerHTML >= 1 && document.getElementById(14).innerHTML >= 1 && document.getElementById(15).innerHTML >= 1){
+        document.getElementById("youwinblock").style.display = "block";
+        console.log("true");
+        return true;
+    }
+    else {
+        console.log("false");
+        return false;
     }
 }
