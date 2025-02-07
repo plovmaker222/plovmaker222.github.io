@@ -4,6 +4,13 @@ const chars5=[
         "name": "SOVETDIREKTOROV",
         "desc": "Итоги голосования: Дима Бонд не допускается к разбану на этом сервере.",
         "rarity": 5
+    },
+
+    {
+        "id": 16,
+        "name": "SVETLOLIKII",
+        "desc": "основатель ООСД (оп-оп сприподнизовского движения) спустился из нашего мира в коричневую страну, чтобы покарать всех грешников, от К1 до К3",
+        "rarity": 5
     }
 ]
 
@@ -39,6 +46,13 @@ const chars3=[
         "name": "RIVAN",
         "desc": "- Пошли на улицы таркова - Пишли",
         "rarity": 3
+    },
+    {
+        "id": 17,
+        "name": "MAKS2",
+        "desc": "некоторые вещи не меняются, в любой момент времени это будет актуальным",
+        "rarity": 3
+
     }
 ]
 const chars2=[
@@ -206,7 +220,7 @@ function showItem (id) {
 }
 
 function checkWin(){
-    if (document.getElementById(1).innerHTML >= 1 && document.getElementById(2).innerHTML >= 1 && document.getElementById(3).innerHTML >= 1 && document.getElementById(4).innerHTML >= 1 && document.getElementById(5).innerHTML >= 1 && document.getElementById(6).innerHTML >= 1 && document.getElementById(7).innerHTML >= 1 && document.getElementById(8).innerHTML >= 1 && document.getElementById(9).innerHTML >= 1 && document.getElementById(10).innerHTML >= 1 && document.getElementById(11).innerHTML >= 1 && document.getElementById(12).innerHTML >= 1 && document.getElementById(13).innerHTML >= 1 && document.getElementById(14).innerHTML >= 1 && document.getElementById(15).innerHTML >= 1){
+    if (document.getElementById(1).innerHTML >= 1 && document.getElementById(2).innerHTML >= 1 && document.getElementById(3).innerHTML >= 1 && document.getElementById(4).innerHTML >= 1 && document.getElementById(5).innerHTML >= 1 && document.getElementById(6).innerHTML >= 1 && document.getElementById(7).innerHTML >= 1 && document.getElementById(8).innerHTML >= 1 && document.getElementById(9).innerHTML >= 1 && document.getElementById(10).innerHTML >= 1 && document.getElementById(11).innerHTML >= 1 && document.getElementById(12).innerHTML >= 1 && document.getElementById(13).innerHTML >= 1 && document.getElementById(14).innerHTML >= 1 && document.getElementById(15).innerHTML >= 1 && document.getElementById(16).innerHTML >= 1 && document.getElementById(17).innerHTML >= 1){
         document.getElementById("youwinblock").style.display = "block";
         console.log("true");
         return true;
