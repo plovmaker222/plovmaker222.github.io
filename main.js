@@ -111,7 +111,14 @@ const chars1=[
         "name": "SHOOTER",
         "desc": "пиво льется через край, с 23 февраля) в дотку?",
         "rarity": 1
+    },
+    {
+        "id": 18,
+        "name": "OKSANA",
+        "desc": "за нова нету никаво другова",
+        "rarity": 1
     }
+
 ]
 
 function getRandom(){
@@ -220,7 +227,7 @@ function showItem (id) {
 }
 
 function checkWin(){
-    if (document.getElementById(1).innerHTML >= 1 && document.getElementById(2).innerHTML >= 1 && document.getElementById(3).innerHTML >= 1 && document.getElementById(4).innerHTML >= 1 && document.getElementById(5).innerHTML >= 1 && document.getElementById(6).innerHTML >= 1 && document.getElementById(7).innerHTML >= 1 && document.getElementById(8).innerHTML >= 1 && document.getElementById(9).innerHTML >= 1 && document.getElementById(10).innerHTML >= 1 && document.getElementById(11).innerHTML >= 1 && document.getElementById(12).innerHTML >= 1 && document.getElementById(13).innerHTML >= 1 && document.getElementById(14).innerHTML >= 1 && document.getElementById(15).innerHTML >= 1 && document.getElementById(16).innerHTML >= 1 && document.getElementById(17).innerHTML >= 1){
+    if (document.getElementById(1).innerHTML >= 1 && document.getElementById(2).innerHTML >= 1 && document.getElementById(3).innerHTML >= 1 && document.getElementById(4).innerHTML >= 1 && document.getElementById(5).innerHTML >= 1 && document.getElementById(6).innerHTML >= 1 && document.getElementById(7).innerHTML >= 1 && document.getElementById(8).innerHTML >= 1 && document.getElementById(9).innerHTML >= 1 && document.getElementById(10).innerHTML >= 1 && document.getElementById(11).innerHTML >= 1 && document.getElementById(12).innerHTML >= 1 && document.getElementById(13).innerHTML >= 1 && document.getElementById(14).innerHTML >= 1 && document.getElementById(15).innerHTML >= 1 && document.getElementById(16).innerHTML >= 1 && document.getElementById(17).innerHTML >= 1 && document.getElementById(18).innerHTML >= 1){
         document.getElementById("youwinblock").style.display = "block";
         console.log("true");
         return true;
